@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('public/backend/plugins/jquery-ui/jquery-ui.min.css') }}">
+<link rel="stylesheet" href="{{ asset('backend/plugins/jquery-ui/jquery-ui.min.css') }}">
 <style type="text/css" id="custom-css-code">
 </style>
 		
@@ -166,9 +166,9 @@
 @endsection
 
 @section('js-script')
-<script src="{{ asset('public/backend/assets/js/clipboard.min.js') }}"></script>
-<script src="{{ asset('public/backend/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
-<script src="{{ asset('public/backend/assets/js/invoice-template.js') }}"></script>
+<script src="{{ asset('backend/assets/js/clipboard.min.js') }}"></script>
+<script src="{{ asset('backend/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
+<script src="{{ asset('backend/assets/js/invoice-template.js') }}"></script>
 @endsection
 
 

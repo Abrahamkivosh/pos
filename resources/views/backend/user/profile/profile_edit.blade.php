@@ -63,7 +63,7 @@
 							<div class="form-group row">
 								<label class="col-xl-3 col-form-label">{{ _lang('Image') }} (300 X 300)</label>
 								<div class="col-xl-9">
-									<input type="file" class="form-control dropify" data-default-file="{{ $profile->profile_picture != "" ? asset('public/uploads/profile/'.$profile->profile_picture) : '' }}" name="profile_picture" data-allowed-file-extensions="png jpg jpeg PNG JPG JPEG">
+									<input type="file" class="form-control dropify" data-default-file="{{ $profile->profile_picture != "" ? asset('uploads/profile/'.$profile->profile_picture) : '' }}" name="profile_picture" data-allowed-file-extensions="png jpg jpeg PNG JPG JPEG">
 								</div>
 							</div>
 

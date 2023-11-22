@@ -5,6 +5,7 @@
 /public/uploads/profile
 /public/hot
 /public/storage
+/public/public/backup
 /storage/*.key
 /vendor
 /.phpintel

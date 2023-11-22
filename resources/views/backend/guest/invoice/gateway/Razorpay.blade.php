@@ -22,7 +22,7 @@
                             data-amount="{{ (($invoice->grand_total - $invoice->paid) * 100) }}"
                             data-currency="{{ $invoice->business->currency }}"
                             data-name="{{ _lang('Invoice Payment') }}"
-                            data-image="{{ asset('public/uploads/media/' . $invoice->business->logo) }}"
+                            data-image="{{ asset('uploads/media/' . $invoice->business->logo) }}"
                             data-description="{{ _lang('Invoice Payment') . ' #' . $invoice->invoice_number }}"
                             data-prefill.name="{{ $invoice->customer->name }}"
                             data-prefill.email="{{ $invoice->customer->email  }}"

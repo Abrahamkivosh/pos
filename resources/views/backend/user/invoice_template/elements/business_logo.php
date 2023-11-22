@@ -32,7 +32,7 @@ function element(){
 		<i class="far fa-trash-alt"></i>
 		<i class="far fa-edit"></i>
 		<i class="fas fa-clone"></i>
-		<img src="'. asset('public/uploads/media/' . request()->activeBusiness->logo) .'" class="element-logo wp-100">
+		<img src="'. asset('uploads/media/' . request()->activeBusiness->logo) .'" class="element-logo wp-100">
 	</div>';
 }
 

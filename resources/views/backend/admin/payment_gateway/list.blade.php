@@ -19,7 +19,7 @@
 						<tr>
 							<td class="pl-3">
 								<div class="d-flex align-items-center">
-									<img src="{{ asset('public/backend/images/gateways/'.$paymentgateway->image) }}" class="thumb-sm img-thumbnail rounded-circle mr-3">
+									<img src="{{ asset('backend/images/gateways/'.$paymentgateway->image) }}" class="thumb-sm img-thumbnail rounded-circle mr-3">
 									<div><span class="d-block text-height-0"><b>{{ $paymentgateway->name }}</b></span></div>
 								</div>
 							</td>

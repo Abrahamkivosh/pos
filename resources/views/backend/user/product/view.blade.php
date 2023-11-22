@@ -11,7 +11,7 @@
 			<div class="card-body">
 			    <table class="table table-striped table-bordered">
 					<tr>
-                        <td colspan="2" class="text-center"><img class="rounded product-img" src="{{ asset('public/uploads/media/'.$product->image) }}"></td>
+                        <td colspan="2" class="text-center"><img class="rounded product-img" src="{{ asset('uploads/media/'.$product->image) }}"></td>
                     </tr>
 				    <tr><td>{{ _lang('Name') }}</td><td>{{ $product->name }}</td></tr>
 					<tr><td>{{ _lang('Type') }}</td><td>{{ ucwords($product->type) }}</td></tr>

@@ -22,7 +22,7 @@
 					<tbody>
 					    @foreach($posts as $post)
 					    <tr data-id="row_{{ $post->id }}">
-							<td class='image'><img src="{{ asset('public/uploads/media/'.$post->image) }}" class="thumb-sm img-thumbnail"/></td>
+							<td class='image'><img src="{{ asset('uploads/media/'.$post->image) }}" class="thumb-sm img-thumbnail"/></td>
 							<td class='title'>{{ $post->translation->title }}</td>
 							<td class='status'>{!! xss_clean(status($post->status)) !!}</td>
 

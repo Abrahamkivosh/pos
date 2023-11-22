@@ -8,7 +8,7 @@
 					@if($type == 'pdf')
 					<img class="logo" src="{{ public_path('uploads/media/' . $quotation->business->logo) }}">
 					@else
-					<img class="logo" src="{{ asset('public/uploads/media/' . $quotation->business->logo) }}">
+					<img class="logo" src="{{ asset('uploads/media/' . $quotation->business->logo) }}">
 					@endif
 					<h2 class="title">{{ $quotation->title }}</h2>
 				</div>

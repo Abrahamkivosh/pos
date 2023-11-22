@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers\User;
 
-use App\Http\Controllers\Controller;
+use Validator;
+use DataTables;
 use App\Models\Invoice;
 use App\Models\Purchase;
 use App\Models\Transaction;
-use DataTables;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Validator;
+use Illuminate\Support\Facades\Log;
+use App\Http\Controllers\Controller;
 
 class TransactionController extends Controller {
 
@@ -123,6 +124,10 @@ class TransactionController extends Controller {
             $attachment = rand() . time() . $file->getClientOriginalName();
             $file->move(public_path() . "/uploads/media/", $attachment);
         }
+
+        Log::info($request->all());
+        return response()->json(['result' => 'error', 'action' => 'store', 'message' => _lang('Saved Successfully'), 'data' => $transaction, 'table' => '#expenses_table']);
+        
 
         $transaction                          = new Transaction();
         $transaction->trans_date              = $request->input('trans_date');

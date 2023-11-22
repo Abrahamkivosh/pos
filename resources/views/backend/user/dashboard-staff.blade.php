@@ -195,6 +195,6 @@
 @endsection
 
 @section('js-script')
-<script src="{{ asset('public/backend/plugins/chartJs/chart.min.js') }}"></script>
-<script src="{{ asset('public/backend/assets/js/dashboard.js?v=1.3') }}"></script>
+<script src="{{ asset('backend/plugins/chartJs/chart.min.js') }}"></script>
+<script src="{{ asset('backend/assets/js/dashboard.js?v=1.3') }}"></script>
 @endsection

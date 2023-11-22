@@ -17,7 +17,7 @@
                     <div class="col-md-4 my-2">
 						<div class="border rounded text-center">
 							<div class="card-body">
-								<img class="thumb-xl m-auto rounded-circle img-thumbnail" src="{{ asset('public/backend/images/gateways/'.$paymentgateway->image) }}"/>
+								<img class="thumb-xl m-auto rounded-circle img-thumbnail" src="{{ asset('backend/images/gateways/'.$paymentgateway->image) }}"/>
 								<h6 class="mt-3 mb-4">{{ $paymentgateway->name }}</h6>
 								<a href="{{ route('invoices.make_payment', [$invoice->short_code, $paymentgateway->slug]) }}" class="btn btn-outline-primary btn-block"><i class="fas fa-long-arrow-alt-right mr-2"></i>{{ _lang('Select') }}</a>
 							</div>

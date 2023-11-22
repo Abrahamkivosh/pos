@@ -1,7 +1,7 @@
 @extends('layouts.guest')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('public/backend/assets/css/invoice.css?v=1.0') }}">
+<link rel="stylesheet" href="{{ asset('backend/assets/css/invoice.css?v=1.0') }}">
 @include('layouts.others.invoice-css')
 <div class="row">
 	<div class="col-lg-10 offset-lg-1">

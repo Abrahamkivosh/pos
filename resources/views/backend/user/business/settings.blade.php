@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<link href="{{ asset('public/backend/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.css') }}" rel="stylesheet">
+<link href="{{ asset('backend/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.css') }}" rel="stylesheet">
 
 <div class="row">
 	<div class="col-md-12">
@@ -376,7 +376,7 @@
 
 							<div class="card">
 								<div class="card-header bg-light" data-toggle="collapse" data-target="#{{ $paymentgateway->slug }}" aria-expanded="true" aria-controls="{{ $paymentgateway->slug }}">
-								  <span class="panel-title"><img class="thumb-xs rounded-circle img-thumbnail mr-2" src="{{ asset('public/backend/images/gateways/'.$paymentgateway->image) }}"/>{{ $paymentgateway->name }}</span>
+								  <span class="panel-title"><img class="thumb-xs rounded-circle img-thumbnail mr-2" src="{{ asset('backend/images/gateways/'.$paymentgateway->image) }}"/>{{ $paymentgateway->name }}</span>
 								</div>
 
 								<div id="{{ $paymentgateway->slug }}" class="collapse" aria-labelledby="heading{{ $paymentgateway->slug }}" data-parent="#payment_gateways">
@@ -565,7 +565,7 @@
 @endsection
 
 @section('js-script')
-<script src="{{ asset('public/backend/plugins/bootstrap-colorpicker/bootstrap-colorpicker.js') }}"></script>
+<script src="{{ asset('backend/plugins/bootstrap-colorpicker/bootstrap-colorpicker.js') }}"></script>
 <script>
 (function ($) {
 	"use strict";	

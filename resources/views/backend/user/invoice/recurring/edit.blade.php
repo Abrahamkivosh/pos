@@ -15,7 +15,7 @@
 					<div class="row">
 						<div class="col-lg-4">
 							<div class="invoice-logo">
-								<img src="{{ asset('public/uploads/media/' . request()->activeBusiness->logo) }}" alt="logo">					
+								<img src="{{ asset('uploads/media/' . request()->activeBusiness->logo) }}" alt="logo">					
 							</div>
 						</div>
 
@@ -295,5 +295,5 @@
 @endsection
 
 @section('js-script')
-<script src="{{ asset('public/backend/assets/js/invoice.js?v=1.0') }}"></script>
+<script src="{{ asset('backend/assets/js/invoice.js?v=1.0') }}"></script>
 @endsection

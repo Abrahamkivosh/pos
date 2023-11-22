@@ -52,7 +52,7 @@
 		$invoice_content = str_replace('<!--$invoice_payment_history-->', view('backend.user.invoice.template.components.invoice-payment-history', compact('invoice'))->render(), $invoice_content);
 		$invoice_content = str_replace('$tax_loop', view('backend.user.invoice.template.components.invoice-taxes', compact('invoice'))->render(), $invoice_content);
 			
-		$logo = '<img src="' . ($type == 'pdf' ? public_path('uploads/media/' . $invoice->business->logo) : asset('public/uploads/media/' . $invoice->business->logo)).'" class="element-logo wp-100">';
+		$logo = '<img src="' . ($type == 'pdf' ? public_path('uploads/media/' . $invoice->business->logo) : asset('uploads/media/' . $invoice->business->logo)).'" class="element-logo wp-100">';
 
 		$invoice_content = str_replace('<!--$company_logo-->', $logo, $invoice_content);
 

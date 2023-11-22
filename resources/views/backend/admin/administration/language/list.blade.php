@@ -23,7 +23,7 @@
 						<tbody>
 						  @foreach(get_language_list() as $language)
 							<tr>
-								<td class="pl-3"><img class="avatar avatar-xss avatar-circle me-2" src="{{ asset('public/backend/plugins/flag-icon-css/flags/1x1/'.explode('---', $language)[1].'.svg') }}"/></td>
+								<td class="pl-3"><img class="avatar avatar-xss avatar-circle me-2" src="{{ asset('backend/plugins/flag-icon-css/flags/1x1/'.explode('---', $language)[1].'.svg') }}"/></td>
 								<td>{{ explode('---', $language)[0] }}</td>
 								<td class="text-center">
 									<span class="dropdown">

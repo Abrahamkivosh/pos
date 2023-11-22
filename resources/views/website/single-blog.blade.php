@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="mb-5 text-center">
-                    <img src="{{ asset('public/uploads/media/'.$post->image) }}" class="blog-image">
+                    <img src="{{ asset('uploads/media/'.$post->image) }}" class="blog-image">
                 </div>
 
                 <div class="content">
@@ -47,7 +47,7 @@
                     <div class="single-comment {{ $comment->parent_id != null ? 'reply-comment' : '' }}">
                         <div class="d-flex">
                             <div class="comment_author_img">
-                                <img src="{{ $comment->user_id == null ? asset('public/uploads/profile/default.png') : asset('public/uploads/profile/'. $comment->posted_by->profile_picture) }}" class="me-3 rounded-circle border" alt="author image">
+                                <img src="{{ $comment->user_id == null ? asset('uploads/profile/default.png') : asset('uploads/profile/'. $comment->posted_by->profile_picture) }}" class="me-3 rounded-circle border" alt="author image">
                             </div>
                             <div class="comment-details w-100">
                                 <div class="meta-info d-flex justify-content-between align-items-center mb-2">

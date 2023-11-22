@@ -35,7 +35,7 @@ class ProductController extends Controller {
 
         return Datatables::eloquent($products)
             ->editColumn('image', function ($product) {
-                return '<img src="' . asset('public/uploads/media/' . $product->image) . '" class="thumb-sm img-thumbnail">';
+                return '<img src="' . asset('uploads/media/' . $product->image) . '" class="thumb-sm img-thumbnail">';
             })
             ->editColumn('type', function ($product) {
                 return ucwords($product->type);

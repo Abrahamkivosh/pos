@@ -27,7 +27,7 @@
 					    <tr data-id="row_{{ $business->id }}">
 							<td class='name'>
 								<div class="d-flex align-items-center">
-									<img src="{{ asset('public/uploads/media/' . $business->logo) }}" class="thumb-sm mr-2">
+									<img src="{{ asset('uploads/media/' . $business->logo) }}" class="thumb-sm mr-2">
 									<span><b>{{ $business->name }}</b></span>
 								</div>
 							</td>

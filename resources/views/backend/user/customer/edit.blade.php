@@ -112,7 +112,7 @@
 						<div class="col-md-12">
 							<div class="form-group">
 								<label class="control-label">{{ _lang('Profile Picture') }}</label>						
-								<input type="file" class="form-control dropify" name="profile_picture" data-default-file="{{ asset('public/uploads/profile/'.$customer->profile_picture) }}" data-allowed-file-extensions="png jpg jpeg PNG JPG JPEG">
+								<input type="file" class="form-control dropify" name="profile_picture" data-default-file="{{ asset('uploads/profile/'.$customer->profile_picture) }}" data-allowed-file-extensions="png jpg jpeg PNG JPG JPEG">
 							</div>
 						</div>
 							

@@ -45,7 +45,7 @@
 						<div class="col-md-12">
 					        <div class="form-group">
 						        <label class="control-label">{{ _lang('About Image') }}</label>
-						        <input type="file" class="dropify" name="about_page_media[about_image]" data-default-file="{{ isset($pageMedia->about_image) ? asset('public/uploads/media/'.$pageMedia->about_image) : '' }}">
+						        <input type="file" class="dropify" name="about_page_media[about_image]" data-default-file="{{ isset($pageMedia->about_image) ? asset('uploads/media/'.$pageMedia->about_image) : '' }}">
 					        </div>
 					    </div>
 

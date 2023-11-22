@@ -644,7 +644,6 @@
 			beforeSend: function () {
 				$("#preloader").css("display", "block");
 			}, success: function (data) {
-				console.log(data);
 				$("#preloader").css("display", "none");
 				$('#secondary_modal .modal-title').html(title);
 				$('#secondary_modal .modal-body').html(data);

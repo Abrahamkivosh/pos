@@ -50,7 +50,7 @@
 		$invoice_content = str_replace('$tax_loop', view('backend.user.quotation.template.components.invoice-taxes', compact('quotation'))->render(), $invoice_content);
 
 
-		$logo = '<img src="' . ($type == 'pdf' ? public_path('uploads/media/' . $quotation->business->logo) : asset('public/uploads/media/' . $quotation->business->logo)).'" class="element-logo wp-100">';
+		$logo = '<img src="' . ($type == 'pdf' ? public_path('uploads/media/' . $quotation->business->logo) : asset('uploads/media/' . $quotation->business->logo)).'" class="element-logo wp-100">';
 
 		$invoice_content = str_replace('<!--$company_logo-->', $logo, $invoice_content);
 
