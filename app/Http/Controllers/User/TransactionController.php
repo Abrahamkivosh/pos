@@ -125,8 +125,7 @@ class TransactionController extends Controller {
             $file->move(public_path() . "/uploads/media/", $attachment);
         }
 
-        Log::info($request->all());
-        return response()->json(['result' => 'error', 'action' => 'store', 'message' => _lang('Saved Successfully'), 'data' => $transaction, 'table' => '#expenses_table']);
+        // Log::info($request->all());
         
 
         $transaction                          = new Transaction();
